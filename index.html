@@ -1,0 +1,1588 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>亚洲精久在久久朗人美_亚洲影像精选_人文纪实与美学影像</title>
+<meta name="description" content="亚洲精久在久久朗人美是一个聚焦亚洲人文影像与美学纪实的视频品牌，收录城市纪实、匠人故事、自然风物与影像评论等栏目，适合喜欢亚洲影像与深度内容的观众浏览。">
+<meta name="keywords" content="亚洲影像精选,人文纪实片,城市影像志,匠人纪录,东方美学短片">
+<style>
+:root{
+  --ink:#141a1f;
+  --ink-2:#2c3740;
+  --muted:#5d6b76;
+  --line:#e2e6e9;
+  --bg:#f6f4f0;
+  --panel:#ffffff;
+  --brand:#0f6f63;
+  --brand-deep:#0a4f47;
+  --brand-soft:#e4f1ee;
+  --accent:#c8552b;
+  --accent-soft:#fbeae2;
+  --gold:#b8892f;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 1px 2px rgba(20,26,31,.05),0 8px 24px rgba(20,26,31,.06);
+  --shadow-lg:0 2px 4px rgba(20,26,31,.05),0 18px 44px rgba(20,26,31,.1);
+  --wrap:1320px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);
+  background:var(--bg);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.25em}
+li{margin-bottom:.4em}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+/* ============ 公告条 ============ */
+.notice{
+  background:linear-gradient(90deg,var(--brand-deep),var(--brand));
+  color:#eaf6f3;font-size:13.5px;
+  position:sticky;top:0;z-index:60;
+  border-bottom:1px solid rgba(255,255,255,.14);
+}
+.notice .wrap{display:flex;align-items:center;gap:14px;height:42px;overflow:hidden}
+.notice .tag{
+  flex:none;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
+  padding:1px 9px;border-radius:999px;font-size:11.5px;letter-spacing:.08em;
+}
+.notice .txt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.notice .txt b{color:#fff;font-weight:600}
+.notice a.more{flex:none;font-size:12.5px;color:#fff;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:1px}
+.notice a.more:hover{color:#ffe6d8;border-color:#ffe6d8}
+
+/* ============ 页头 ============ */
+.site-head{
+  position:sticky;top:42px;z-index:55;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{display:flex;align-items:center;gap:20px;height:72px}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand-mark{width:40px;height:40px;flex:none}
+.brand-txt .cn{display:block;font-size:18px;font-weight:800;letter-spacing:.02em;line-height:1.15}
+.brand-txt .en{display:block;font-size:10px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;margin-top:2px}
+.nav{display:flex;align-items:center;gap:2px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  flex:none;padding:8px 12px;border-radius:8px;font-size:14.5px;color:var(--ink-2);
+  transition:background .18s,color .18s;
+}
+.nav a:hover{background:var(--brand-soft);color:var(--brand-deep)}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:172px;height:36px;border:1px solid var(--line);background:#fbfaf8;
+  border-radius:999px;padding:0 34px 0 14px;font-size:13.5px;color:var(--ink);
+  transition:border-color .18s,width .2s;
+}
+.search-box input:focus{border-color:var(--brand);width:210px;outline:none;background:#fff}
+.search-box .ico{position:absolute;right:12px;pointer-events:none;color:var(--muted)}
+.btn-ghost{
+  height:36px;padding:0 16px;border-radius:999px;border:1px solid var(--brand);
+  color:var(--brand-deep);background:#fff;font-size:13.5px;font-weight:600;cursor:pointer;
+  transition:background .18s,color .18s;
+}
+.btn-ghost:hover{background:var(--brand);color:#fff}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1000px 420px at 84% -10%,rgba(15,111,99,.14),transparent 62%),
+    radial-gradient(760px 380px at 4% 110%,rgba(200,85,43,.10),transparent 60%),
+    #fbfaf7;
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
+  gap:48px;align-items:center;padding:56px 0 60px;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:.16em;color:var(--brand-deep);
+  background:var(--brand-soft);border:1px solid rgba(15,111,99,.18);
+  padding:5px 13px;border-radius:999px;margin-bottom:20px;
+}
+.hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+h1.hero-title{
+  font-size:clamp(30px,4.1vw,50px);line-height:1.18;letter-spacing:.01em;
+  font-weight:800;color:var(--ink);margin-bottom:18px;
+}
+h1.hero-title .hl{
+  color:var(--brand-deep);
+  background:linear-gradient(180deg,transparent 66%,rgba(15,111,99,.16) 66%);
+}
+.hero-lead{font-size:16px;color:var(--ink-2);max-width:36em;margin-bottom:26px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.btn-main{
+  display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 24px;
+  background:var(--brand);color:#fff;border-radius:999px;font-weight:600;font-size:15px;
+  border:1px solid var(--brand);transition:background .18s,transform .18s;
+}
+.btn-main:hover{background:var(--brand-deep);transform:translateY(-1px)}
+.btn-line{
+  display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;
+  border:1px solid var(--line);border-radius:999px;font-weight:600;font-size:15px;
+  color:var(--ink-2);background:#fff;transition:border-color .18s,color .18s;
+}
+.btn-line:hover{border-color:var(--brand);color:var(--brand-deep)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:28px}
+.hero-stats div{min-width:78px}
+.hero-stats .num{font-size:24px;font-weight:800;color:var(--brand-deep);line-height:1.2;font-variant-numeric:tabular-nums}
+.hero-stats .lab{font-size:12.5px;color:var(--muted);margin-top:2px;letter-spacing:.02em}
+
+/* 首屏视觉 */
+.hero-art{position:relative}
+.art-frame{
+  position:relative;border-radius:20px;overflow:hidden;
+  box-shadow:var(--shadow-lg);border:1px solid rgba(20,26,31,.07);
+  background:#0d2622;
+}
+.art-frame svg{display:block;width:100%;height:auto}
+.art-badge{
+  position:absolute;left:16px;bottom:16px;right:16px;
+  display:flex;align-items:center;gap:12px;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(6px);
+  border-radius:12px;padding:11px 14px;border:1px solid rgba(255,255,255,.6);
+  box-shadow:0 6px 20px rgba(0,0,0,.18);
+}
+.art-badge .b-ico{
+  width:34px;height:34px;border-radius:9px;flex:none;
+  background:var(--accent-soft);color:var(--accent);
+  display:grid;place-items:center;
+}
+.art-badge .b-t{font-size:13.5px;font-weight:700;line-height:1.3;color:var(--ink)}
+.art-badge .b-s{font-size:11.5px;color:var(--muted);margin-top:2px}
+.art-chip{
+  position:absolute;top:16px;left:16px;
+  background:rgba(10,79,71,.9);color:#eaf6f3;font-size:12px;letter-spacing:.1em;
+  padding:5px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.22);
+}
+
+/* ============ 主布局：三栏门户 ============ */
+.layout{
+  display:grid;
+  grid-template-columns:176px minmax(0,1fr) 268px;
+  gap:30px;align-items:start;padding:38px 0 20px;
+}
+.layout section[id]{scroll-margin-top:132px}
+
+/* 左频道栏 */
+.side-left{position:sticky;top:132px}
+.channel-box{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 12px;box-shadow:var(--shadow);
+}
+.channel-box h2{
+  font-size:11.5px;letter-spacing:.18em;color:var(--muted);font-weight:700;
+  padding:0 8px 10px;margin-bottom:6px;border-bottom:1px solid var(--line);
+}
+.channel-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.channel-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  padding:7px 8px;border-radius:8px;font-size:13.8px;color:var(--ink-2);
+  transition:background .16s,color .16s;
+}
+.channel-list a:hover{background:var(--brand-soft);color:var(--brand-deep)}
+.channel-list .cnt{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.channel-list a:hover .cnt{color:var(--brand)}
+.side-note{
+  margin-top:16px;background:linear-gradient(160deg,#0a4f47,#0f6f63);
+  border-radius:var(--radius);padding:16px;color:#dff0ec;font-size:12.8px;line-height:1.65;
+  box-shadow:var(--shadow);
+}
+.side-note strong{display:block;color:#fff;font-size:14px;margin-bottom:6px;letter-spacing:.02em}
+.side-note .mini{margin-top:10px;font-size:11.5px;color:#9fc9c2;letter-spacing:.06em}
+
+/* 中栏通用板块 */
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 26px 24px;margin-bottom:26px;box-shadow:var(--shadow);
+}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px}
+.sec-head .t{min-width:0}
+.sec-head h2{font-size:21px;letter-spacing:.01em}
+.sec-head .sub{font-size:13px;color:var(--muted);margin-top:5px}
+.sec-head .link{flex:none;font-size:13px;color:var(--brand-deep);border-bottom:1px solid rgba(15,111,99,.35);padding-bottom:1px}
+.sec-head .link:hover{color:var(--accent);border-color:var(--accent)}
+
+/* 概览 */
+.overview .body{font-size:15px;color:var(--ink-2);column-gap:34px}
+.overview .body p:last-child{margin-bottom:0}
+.ov-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;padding-top:16px;border-top:1px dashed var(--line)}
+.ov-tags span{
+  font-size:12.5px;color:var(--brand-deep);background:var(--brand-soft);
+  border:1px solid rgba(15,111,99,.16);padding:4px 11px;border-radius:999px;
+}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;
+  background:#fff;display:flex;flex-direction:column;
+  transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:rgba(15,111,99,.3)}
+.card .thumb{position:relative;background:#eceae5;aspect-ratio:4/3;overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.card:hover .thumb img{transform:scale(1.04)}
+.card .thumb .cat{
+  position:absolute;top:9px;left:9px;font-size:11px;letter-spacing:.06em;
+  background:rgba(10,79,71,.9);color:#eaf6f3;padding:3px 9px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.2);
+}
+.card .c-body{padding:13px 14px 14px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:15px;line-height:1.45;margin-bottom:7px}
+.card .desc{font-size:12.8px;color:var(--muted);line-height:1.65;flex:1;margin-bottom:10px}
+.card .tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+.card .tags i{
+  font-style:normal;font-size:11px;color:var(--ink-2);background:#f2f1ed;
+  border:1px solid #e6e4de;padding:1px 7px;border-radius:4px;
+}
+.card .meta{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-size:11.5px;color:var(--muted);padding-top:9px;border-top:1px solid #f0eeea;
+  font-variant-numeric:tabular-nums;
+}
+.card .meta .hot{color:var(--accent);font-weight:600}
+.card .meta .score{color:var(--gold);font-weight:700}
+
+/* 动态列表 */
+.news-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.news-list li{
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;
+  padding:12px 0;border-bottom:1px dashed var(--line);margin:0;
+}
+.news-list li:last-child{border-bottom:none;padding-bottom:0}
+.news-list li:first-child{padding-top:0}
+.news-list .time{
+  font-size:11.5px;color:var(--brand-deep);background:var(--brand-soft);
+  border-radius:6px;padding:3px 0;text-align:center;height:fit-content;
+  font-variant-numeric:tabular-nums;line-height:1.5;
+}
+.news-list .n-t{font-size:14.5px;font-weight:600;margin-bottom:2px}
+.news-list .n-t:hover{color:var(--brand-deep)}
+.news-list .n-s{font-size:12.8px;color:var(--muted);line-height:1.6}
+.news-list .n-s em{font-style:normal;color:var(--accent);font-weight:600}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat-item{
+  display:flex;flex-direction:column;gap:4px;padding:14px 14px 13px;
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fbfaf7;
+  transition:background .18s,border-color .18s,transform .18s;
+}
+.cat-item:hover{background:var(--brand-soft);border-color:rgba(15,111,99,.32);transform:translateY(-2px)}
+.cat-item .c-n{font-size:14.5px;font-weight:700;color:var(--ink)}
+.cat-item .c-d{font-size:11.8px;color:var(--muted);line-height:1.5}
+.cat-item .c-k{font-size:11px;color:var(--brand-deep);letter-spacing:.04em;margin-top:2px}
+
+/* 深度解析 */
+.deep .sec-head{margin-bottom:14px}
+.deep-body{font-size:15px;color:var(--ink-2)}
+.deep-body h3{
+  font-size:16.5px;margin:24px 0 9px;padding-left:12px;
+  border-left:3px solid var(--brand);color:var(--ink);line-height:1.4;
+}
+.deep-body h3:first-of-type{margin-top:6px}
+.deep-body p{margin-bottom:.85em}
+.deep-body ul{padding-left:1.15em}
+.deep-body li{font-size:14.5px;line-height:1.7}
+.deep-body strong{color:var(--ink);font-weight:700}
+.compare{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0 6px;
+}
+.compare div{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 15px;background:#fbfaf7;
+}
+.compare h4{font-size:14px;margin-bottom:6px;color:var(--brand-deep)}
+.compare p{font-size:13px;color:var(--muted);margin:0;line-height:1.65}
+.pull{
+  margin:18px 0;padding:15px 18px;background:var(--accent-soft);
+  border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:14px;color:#7a3418;line-height:1.7;
+}
+
+/* 体验指南 */
+.steps{list-style:none;margin:0;padding:0;counter-reset:st;display:flex;flex-direction:column;gap:14px}
+.steps li{
+  counter-increment:st;position:relative;padding:14px 16px 14px 56px;margin:0;
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fbfaf7;
+}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);
+  position:absolute;left:15px;top:14px;width:28px;height:28px;border-radius:8px;
+  background:var(--brand);color:#fff;font-size:12.5px;font-weight:700;
+  display:grid;place-items:center;font-variant-numeric:tabular-nums;
+}
+.steps h4{font-size:14.5px;margin-bottom:4px}
+.steps p{font-size:13px;color:var(--muted);margin:0;line-height:1.65}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fbfaf7;
+  padding:0;margin-bottom:10px;overflow:hidden;
+}
+.faq details[open]{background:#fff;border-color:rgba(15,111,99,.3);box-shadow:var(--shadow)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:14px 44px 14px 16px;position:relative;
+  font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.55;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"";position:absolute;right:17px;top:50%;width:9px;height:9px;
+  border-right:2px solid var(--brand);border-bottom:2px solid var(--brand);
+  transform:translateY(-70%) rotate(45deg);transition:transform .2s;
+}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq .a{padding:0 16px 15px;font-size:13.5px;color:var(--muted);line-height:1.75;border-top:1px solid #f0eeea;padding-top:12px;margin-top:0}
+.faq .a b{color:var(--ink-2)}
+
+/* 评论 */
+.cmts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cmt{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 14px;background:#fbfaf7;
+}
+.cmt .u{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.cmt .av{
+  width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;background:var(--brand);
+}
+.cmt .nm{font-size:13px;font-weight:600;color:var(--ink)}
+.cmt .tm{font-size:11px;color:var(--muted);margin-left:auto;font-variant-numeric:tabular-nums}
+.cmt p{font-size:13px;color:var(--ink-2);line-height:1.68;margin:0}
+.cmt p em{font-style:normal;color:var(--brand-deep);font-weight:600}
+
+/* 资讯 */
+.info-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.info-card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:box-shadow .18s,border-color .18s;
+}
+.info-card:hover{box-shadow:var(--shadow);border-color:rgba(15,111,99,.28)}
+.info-card img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.info-card .ic-b{padding:12px 13px 13px;display:flex;flex-direction:column;flex:1}
+.info-card .date{font-size:11.5px;color:var(--accent);font-weight:600;letter-spacing:.03em;margin-bottom:5px;font-variant-numeric:tabular-nums}
+.info-card h4{font-size:14px;line-height:1.5;margin-bottom:6px}
+.info-card p{font-size:12.5px;color:var(--muted);line-height:1.6;margin:0}
+
+/* 相关推荐 标签索引 */
+.rel-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rel-tags a{
+  font-size:13px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+  background:#fbfaf7;color:var(--ink-2);transition:all .18s;
+}
+.rel-tags a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+.rel-tags a span{color:var(--muted);font-size:11.5px;margin-left:4px}
+.rel-tags a:hover span{color:rgba(255,255,255,.75)}
+
+/* 榜单 */
+.rank{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0}
+.rank li{
+  display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center;
+  padding:10px 0;border-bottom:1px dashed var(--line);margin:0;
+}
+.rank li:last-child{border-bottom:none}
+.rank .no{
+  font-size:13px;font-weight:800;color:var(--muted);text-align:center;
+  font-variant-numeric:tabular-nums;
+}
+.rank li:nth-child(1) .no{color:var(--accent)}
+.rank li:nth-child(2) .no{color:var(--gold)}
+.rank li:nth-child(3) .no{color:var(--brand)}
+.rank .r-t{font-size:14px;font-weight:600;line-height:1.5}
+.rank .r-s{font-size:11.8px;color:var(--muted);margin-top:1px}
+.rank .r-v{font-size:11.5px;color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* 右栏 */
+.side-right{position:sticky;top:132px;display:flex;flex-direction:column;gap:18px}
+.r-box{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 15px;box-shadow:var(--shadow);
+}
+.r-box h2{
+  font-size:13px;letter-spacing:.1em;color:var(--ink);font-weight:700;
+  padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:7px;
+}
+.r-box h2::before{content:"";width:3px;height:13px;background:var(--brand);border-radius:2px}
+.r-list{list-style:none;margin:0;padding:0;counter-reset:rk}
+.r-list li{
+  counter-increment:rk;display:flex;gap:9px;padding:8px 0;margin:0;
+  border-bottom:1px dashed #f0eeea;font-size:13.2px;line-height:1.5;
+}
+.r-list li:last-child{border-bottom:none;padding-bottom:0}
+.r-list li::before{
+  content:counter(rk);flex:none;width:18px;height:18px;border-radius:5px;
+  background:#f2f1ed;color:var(--muted);font-size:11px;font-weight:700;
+  display:grid;place-items:center;margin-top:1px;font-variant-numeric:tabular-nums;
+}
+.r-list li:nth-child(-n+3)::before{background:var(--brand-soft);color:var(--brand-deep)}
+.r-list a:hover{color:var(--brand-deep)}
+.r-list .sub{display:block;font-size:11px;color:var(--muted);margin-top:1px}
+.update-feed{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+.update-feed li{display:flex;gap:9px;font-size:12.8px;line-height:1.55;margin:0}
+.update-feed .d{
+  flex:none;font-size:11px;color:var(--brand-deep);background:var(--brand-soft);
+  border-radius:5px;padding:1px 6px;height:fit-content;font-variant-numeric:tabular-nums;
+}
+.update-feed b{font-weight:600;color:var(--ink)}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px}
+.tag-cloud a{
+  font-size:12px;padding:4px 10px;border-radius:6px;background:#f4f2ee;
+  color:var(--ink-2);border:1px solid #e8e5df;transition:all .16s;
+}
+.tag-cloud a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* 搜索结果提示 */
+.search-hint{
+  display:none;margin-bottom:18px;padding:12px 16px;border-radius:var(--radius-sm);
+  background:var(--accent-soft);border:1px solid rgba(200,85,43,.28);
+  font-size:13.5px;color:#7a3418;
+}
+.search-hint.on{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.search-hint button{
+  border:1px solid var(--accent);background:#fff;color:var(--accent);
+  border-radius:999px;padding:3px 12px;font-size:12.5px;cursor:pointer;flex:none;
+}
+.is-hidden{display:none !important}
+
+/* 页尾 */
+.site-foot{background:#0d2622;color:#b6cdc8;margin-top:26px;padding:44px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;padding-bottom:32px}
+.foot-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.foot-brand .cn{font-size:17px;font-weight:800;color:#fff;letter-spacing:.02em}
+.foot-brand .en{font-size:10px;letter-spacing:.2em;color:#6f938c;text-transform:uppercase;margin-top:2px}
+.foot-desc{font-size:13px;line-height:1.75;color:#8fafa8;max-width:30em;margin:0}
+.foot-col h3{font-size:12.5px;letter-spacing:.14em;color:#fff;margin-bottom:12px;font-weight:700}
+.foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.foot-col a{font-size:13px;color:#8fafa8;transition:color .16s}
+.foot-col a:hover{color:#fff}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding:16px 0 22px;
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  font-size:12px;color:#6f938c;line-height:1.7;
+}
+.foot-bottom .note{max-width:62em}
+
+/* 响应式 */
+@media (max-width:1180px){
+  .layout{grid-template-columns:160px minmax(0,1fr) 240px;gap:22px}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .info-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 260px}
+  .side-left{
+    position:static;grid-column:1 / -1;order:-1;
+  }
+  .channel-box{padding:12px}
+  .channel-list{flex-direction:row;overflow-x:auto;gap:6px;padding-bottom:2px;scrollbar-width:none}
+  .channel-list::-webkit-scrollbar{display:none}
+  .channel-list li{flex:none}
+  .channel-list a{
+    border:1px solid var(--line);background:#fbfaf7;border-radius:999px;
+    padding:6px 13px;white-space:nowrap;
+  }
+  .channel-list .cnt{display:none}
+  .side-note{display:none}
+  .hero-grid{grid-template-columns:1fr;gap:34px;padding:44px 0 48px}
+  .hero-art{max-width:560px}
+  .cmts{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:26px}
+}
+@media (max-width:900px){
+  .head-inner{height:64px;gap:12px}
+  .nav{order:3;flex-basis:100%}
+  .site-head{position:sticky;top:42px}
+  .head-inner{flex-wrap:wrap;height:auto;padding:10px 0}
+  .brand-txt .cn{font-size:16px}
+  .search-box input{width:140px}
+  .search-box input:focus{width:160px}
+  .layout section[id]{scroll-margin-top:172px}
+  .side-left,.side-right{top:172px}
+}
+@media (max-width:740px){
+  .wrap{padding:0 16px}
+  .layout{grid-template-columns:minmax(0,1fr);gap:0;padding:22px 0 10px}
+  .side-right{position:static;margin-top:0}
+  .panel{padding:20px 16px;margin-bottom:18px;border-radius:12px}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .info-list{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .sec-head{flex-wrap:wrap;align-items:flex-start;gap:8px}
+  .sec-head h2{font-size:18.5px}
+  h1.hero-title{font-size:27px}
+  .hero-lead{font-size:14.8px}
+  .hero-stats{gap:20px}
+  .hero-stats .num{font-size:20px}
+  .news-list li{grid-template-columns:58px minmax(0,1fr);gap:10px}
+  .foot-grid{grid-template-columns:1fr;gap:22px}
+  .notice .wrap{height:auto;min-height:42px;padding:8px 16px;align-items:flex-start}
+  .notice .txt{white-space:normal;line-height:1.5}
+  .notice a.more{display:none}
+  .layout section[id]{scroll-margin-top:190px}
+  .head-tools .btn-ghost{display:none}
+  .search-box input{width:120px}
+  .search-box input:focus{width:140px}
+  .art-badge{left:10px;right:10px;bottom:10px;padding:9px 11px}
+  .art-badge .b-t{font-size:12.5px}
+}
+@media (max-width:400px){
+  .hero-actions .btn-main,.hero-actions .btn-line{width:100%;justify-content:center}
+  .cat-grid{grid-template-columns:1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice" role="region" aria-label="站点公告">
+  <div class="wrap">
+    <span class="tag">本周更新</span>
+    <span class="txt"><b>11 月 24 日</b>新增《闽南红砖厝手记》第 4 集、《川西木雅人四季》全 6 集上线，影像评论专栏更新 2 篇长约。</span>
+    <a class="more" href="/#latest">查看更新清单</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/#top" aria-label="亚洲精久在久久朗人美 首页">
+      <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-label="亚洲精久在久久朗人美 图形标志">
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0f6f63"/>
+            <stop offset="1" stop-color="#0a4f47"/>
+          </linearGradient>
+        </defs>
+        <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#lg1)"/>
+        <circle cx="20" cy="20" r="9.4" fill="none" stroke="#eaf6f3" stroke-width="1.6" opacity=".85"/>
+        <path d="M20 10.6v18.8M10.6 20h18.8" stroke="#eaf6f3" stroke-width="1.2" opacity=".5"/>
+        <path d="M13.4 26.6l13.2-13.2" stroke="#f0a884" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="2.6" fill="#f0a884"/>
+      </svg>
+      <span class="brand-txt">
+        <span class="cn">亚洲精久在久久朗人美</span>
+        <span class="en">ASIA LUMEN DOCS</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="主题导航">
+      <a href="/#channels">频道</a>
+      <a href="/#featured">精选</a>
+      <a href="/#latest">最新</a>
+      <a href="/#deep">深度</a>
+      <a href="/#guide">观看路径</a>
+      <a href="/#rank">榜单</a>
+      <a href="/#faq">问答</a>
+    </nav>
+
+    <div class="head-tools">
+      <div class="search-box">
+        <label for="q" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内搜索</label>
+        <input id="q" type="search" placeholder="搜索片名 / 类型 / 地域" autocomplete="off">
+        <svg class="ico" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M11 11l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <button class="btn-ghost" type="button" id="toFeatured">开始观看</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="hero-eyebrow"><span class="dot"></span>亚洲人文影像 · 纪实与美学</span>
+      <h1 class="hero-title">亚洲精久在久久朗人美</h1>
+      <p class="hero-lead">
+        一支以亚洲为取景范围的人文影像品牌：记录正在消失的手艺、正在生长的城市街区、
+        以及被忽略的山野与海岸日常。我们把长片、短片、影像评论与拍摄手记放在一起，
+        让一次观看能延伸到人物、地方与时间的更多细节。
+      </p>
+      <div class="hero-actions">
+        <a class="btn-main" href="/#featured">
+          浏览精选片单
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn-line" href="/#deep">读深度解析</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="num">486</div><div class="lab">在架影像条目</div></div>
+        <div><div class="num">12</div><div class="lab">主题频道</div></div>
+        <div><div class="num">37</div><div class="lab">合作拍摄团队</div></div>
+        <div><div class="num">11/24</div><div class="lab">最近一次更新</div></div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="art-frame">
+        <svg viewBox="0 0 640 460" role="img" aria-label="亚洲丘陵、海岸与传统屋檐构成的影像构图">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#123f38"/>
+              <stop offset="1" stop-color="#0a2420"/>
+            </linearGradient>
+            <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1d6b5e"/>
+              <stop offset="1" stop-color="#124a41"/>
+            </linearGradient>
+            <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#0f564c"/>
+              <stop offset="1" stop-color="#0a3b34"/>
+            </linearGradient>
+            <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1a7d70"/>
+              <stop offset="1" stop-color="#0d4a43"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="460" fill="url(#sky)"/>
+          <circle cx="492" cy="112" r="52" fill="#f0a884" opacity=".92"/>
+          <circle cx="492" cy="112" r="82" fill="#f0a884" opacity=".12"/>
+          <path d="M0 250c90-58 150-26 214-52s112-64 186-40 148 60 240 30v272H0Z" fill="url(#hill1)" opacity=".85"/>
+          <path d="M0 306c96-40 152-8 236-30s128-46 200-24 130 46 204 22v186H0Z" fill="url(#hill2)"/>
+          <path d="M0 366h640v94H0Z" fill="url(#sea)"/>
+          <g stroke="#eaf6f3" stroke-width="1.6" opacity=".32" fill="none">
+            <path d="M40 392c40 8 80 8 120 0s80-8 120 0"/>
+            <path d="M300 412c44 8 88 8 132 0s88-8 132 0"/>
+            <path d="M120 428c36 7 72 7 108 0"/>
+          </g>
+          <g fill="#0a2420" opacity=".9">
+            <path d="M90 322l58-30 58 30v46H90Z"/>
+            <path d="M76 322l72-38 72 38-8 8-64-33-64 33Z" fill="#06201c"/>
+          </g>
+          <g stroke="#eaf6f3" stroke-width="1.4" opacity=".55" fill="none">
+            <path d="M120 350h56M120 362h56"/>
+          </g>
+          <g fill="#f0a884" opacity=".85">
+            <circle cx="212" cy="356" r="4"/>
+            <circle cx="232" cy="356" r="4"/>
+          </g>
+          <g stroke="#9fd3c9" stroke-width="1.2" opacity=".4" fill="none">
+            <path d="M470 268c18-14 40-16 58-4"/>
+            <path d="M486 286c14-10 30-11 44-3"/>
+          </g>
+        </svg>
+        <span class="art-chip">本周主推 · 山野与海岸</span>
+        <div class="art-badge">
+          <span class="b-ico">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 3.4l7 4.6-7 4.6V3.4Z" fill="currentColor"/></svg>
+          </span>
+          <span>
+            <span class="b-t">《闽南红砖厝手记》第 4 集已上线</span>
+            <span class="b-s">11 月 24 日 · 42 分钟 · 匠人纪录</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主内容：三栏门户 -->
+<div class="wrap layout">
+
+  <!-- 左频道索引 -->
+  <aside class="side-left" id="channels">
+    <div class="channel-box">
+      <h2>频道索引</h2>
+      <ul class="channel-list">
+        <li><a href="/#featured">城市影像志 <span class="cnt">86</span></a></li>
+        <li><a href="/#featured">匠人纪录 <span class="cnt">74</span></a></li>
+        <li><a href="/#featured">山野风物 <span class="cnt">63</span></a></li>
+        <li><a href="/#featured">海岸与岛屿 <span class="cnt">48</span></a></li>
+        <li><a href="/#featured">饮食人类学 <span class="cnt">57</span></a></li>
+        <li><a href="/#featured">影像评论 <span class="cnt">39</span></a></li>
+        <li><a href="/#featured">口述档案 <span class="cnt">32</span></a></li>
+        <li><a href="/#featured">青年短片 <span class="cnt">61</span></a></li>
+        <li><a href="/#featured">节庆与仪式 <span class="cnt">26</span></a></li>
+        <li><a href="/#deep">拍摄手记 <span class="cnt">44</span></a></li>
+        <li><a href="/#latest">修复与重映 <span class="cnt">18</span></a></li>
+        <li><a href="/#rank">年度片单 <span class="cnt">12</span></a></li>
+      </ul>
+    </div>
+    <div class="side-note">
+      <strong>拍摄者驻留计划</strong>
+      2027 年度驻留开放 6 个名额，面向东亚、东南亚的独立纪录团队，提交选题与 3 分钟样片即可参与初审。
+      <div class="mini">截稿 2026-12-20</div>
+    </div>
+  </aside>
+
+  <!-- 中部主内容 -->
+  <main>
+
+    <div class="search-hint" id="searchHint" role="status" aria-live="polite">
+      <span id="searchHintTxt"></span>
+      <button type="button" id="clearSearch">清除筛选</button>
+    </div>
+
+    <!-- 1 主题领域概览 -->
+    <section class="panel overview" id="overview">
+      <div class="sec-head">
+        <div class="t">
+          <h2>亚洲人文影像在关注什么</h2>
+          <div class="sub">从手艺现场到城市褶皱，四个正在被持续记录的方向</div>
+        </div>
+      </div>
+      <div class="body">
+        <p>
+          亚洲精久在久久朗人美所处理的，是亚洲范围内以真实人物与地方为对象的影像内容。
+          它大致分成四条主线：其一是<strong>手艺与生产现场</strong>，比如闽南红砖厝的砌筑、京都西阵织的提花、
+          大理周城的扎染；其二是<strong>城市与街区生活</strong>，关注旧城改造中的店铺、夜市摊主、通勤路线上的小空间；
+          其三是<strong>山野与海岸的自然风物</strong>，包括高原牧场转场、海岛渔汛与季风节律；
+          其四是<strong>影像评论与拍摄手记</strong>，把镜头背后的取舍、伦理与预算摊开讲。
+        </p>
+        <p>
+          这四类内容的共同点是可被反复观看：一次看完能获得人物故事，二次观看能注意到构图与环境声的处理。
+          当前值得优先关注的，是 11 月上线的《川西木雅人四季》全 6 集，它用一整年跟拍一个牧场的迁场节奏；
+          以及《潮汐表上的渔村》修复版，把 2013 年的原始素材重新调色后补齐了潮汐字幕。
+          如果你更关心方法，拍摄手记专栏里的《一个长镜头的三次失败》比成片更能说明问题。
+        </p>
+        <p>
+          需要说明的是，这里的影像大多属于中长片，单集体量在 25 到 60 分钟之间，
+          与短视频的观看节奏不同。适合在完整的时间里一次看完一集，或者按地域主题连看两三集，
+          让同一个地理区域的气候、口音与食物在记忆里叠起来。
+        </p>
+      </div>
+      <div class="ov-tags">
+        <span>城市影像志</span>
+        <span>匠人纪录</span>
+        <span>山野风物</span>
+        <span>海岸与岛屿</span>
+        <span>口述档案</span>
+        <span>影像评论</span>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="panel" id="featured">
+      <div class="sec-head">
+        <div class="t">
+          <h2>精选片单：值得完整看完的九部</h2>
+          <div class="sub">按近期上线与口碑整理，含题材、看点与时长信息</div>
+        </div>
+        <a class="link" href="/#latest">全部新片</a>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/hongzhuan-cuo04/400/300" alt="闽南红砖厝砌筑现场的匠人纪录画面" width="400" height="300" loading="lazy">
+            <span class="cat">匠人纪录</span>
+          </div>
+          <div class="c-body">
+            <h3>闽南红砖厝手记</h3>
+            <p class="desc">跟拍泉州惠安一支平均年龄 61 岁的砌筑班组，从选土、烧砖到上梁。第 4 集记录屋脊剪黏的修复过程，镜头几乎不动，靠手上的动作推进。</p>
+            <div class="tags"><i>闽南建筑</i><i>手艺传承</i><i>长镜头</i></div>
+            <div class="meta"><span class="score">9.1 分</span><span>更新至 4 集 · 42 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/muya-siji06/400/300" alt="川西高原牧场转场途中的木雅人画面" width="400" height="300" loading="lazy">
+            <span class="cat">山野风物</span>
+          </div>
+          <div class="c-body">
+            <h3>川西木雅人四季</h3>
+            <p class="desc">用一整年跟拍康定沙德乡一处牧场的迁场节奏，四季各一集半。春季那集把接羔的夜晚拍得极安静，环境声只有风和铃铛。</p>
+            <div class="tags"><i>高原牧业</i><i>四季跟拍</i><i>环境声</i></div>
+            <div class="meta"><span class="score">9.3 分</span><span>全 6 集 · 11-24 上线</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/chaoxi-yucun11/400/300" alt="退潮后的渔村滩涂与渔船画面" width="400" height="300" loading="lazy">
+            <span class="cat">海岸与岛屿</span>
+          </div>
+          <div class="c-body">
+            <h3>潮汐表上的渔村</h3>
+            <p class="desc">2013 年拍摄、2026 年重新调色修复。以一张手写潮汐表串联福建三个渔村的作息，修复版补齐了方言字幕与潮位标注。</p>
+            <div class="tags"><i>渔汛作息</i><i>修复重映</i><i>方言字幕</i></div>
+            <div class="meta"><span class="score">8.8 分</span><span>修复版 · 55 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/xijin-zhi07/400/300" alt="京都西阵织提花机与织线的近景画面" width="400" height="300" loading="lazy">
+            <span class="cat">匠人纪录</span>
+          </div>
+          <div class="c-body">
+            <h3>西阵织的一百二十根线</h3>
+            <p class="desc">聚焦京都一家四代织坊的提花工序，重点不在成品而在上机前的排线。片中一位老师傅讲述 1990 年代订单骤减后的转产选择。</p>
+            <div class="tags"><i>京都织造</i><i>工序分解</i><i>口述</i></div>
+            <div class="meta"><span class="score">8.9 分</span><span>全 3 集 · 38 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/jiucheng-yeshi09/400/300" alt="旧城夜市摊位与灯光的夜间街景" width="400" height="300" loading="lazy">
+            <span class="cat">城市影像志</span>
+          </div>
+          <div class="c-body">
+            <h3>旧城夜市的三条街</h3>
+            <p class="desc">以曼谷、台南、槟城三处夜市为对象，各拍一条街的收摊过程。不采访顾客，只跟着摊主从出摊到收摊走完整夜。</p>
+            <div class="tags"><i>夜市生计</i><i>城市观察</i><i>三城对照</i></div>
+            <div class="meta"><span class="score">8.6 分</span><span>全 3 集 · 33 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/zharan-dali05/400/300" alt="大理周城扎染布匹在院落晾晒的画面" width="400" height="300" loading="lazy">
+            <span class="cat">匠人纪录</span>
+          </div>
+          <div class="c-body">
+            <h3>周城扎染：一块布上的二十四节气</h3>
+            <p class="desc">把扎染纹样与节气对应起来讲，从板蓝根浸泡到拆线晾晒。片中保留了两次失败染色，成品与废品一起入镜。</p>
+            <div class="tags"><i>白族扎染</i><i>植物染色</i><i>节气</i></div>
+            <div class="meta"><span class="score">8.7 分</span><span>全 2 集 · 29 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/koushu-laoren12/400/300" alt="老人坐在老屋门口接受口述采访的画面" width="400" height="300" loading="lazy">
+            <span class="cat">口述档案</span>
+          </div>
+          <div class="c-body">
+            <h3>渡口老人：最后一次摆渡</h3>
+            <p class="desc">记录广东北江一位摆了 41 年渡的老人退休前的最后一个月。全片以固定机位拍摄，只保留船桨与水流的声音。</p>
+            <div class="tags"><i>口述史</i><i>渡口生活</i><i>固定机位</i></div>
+            <div class="meta"><span class="score">8.5 分</span><span>单片 · 47 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/qingnian-duanpian03/400/300" alt="青年短片拍摄现场的手持摄影机画面" width="400" height="300" loading="lazy">
+            <span class="cat">青年短片</span>
+          </div>
+          <div class="c-body">
+            <h3>青年短片单元：雨季的三次相遇</h3>
+            <p class="desc">四部东南亚青年导演短片合集，主题都是雨季与陌生人。第二部《摩托修理铺》用 15 分钟讲完一次告别，结构干净。</p>
+            <div class="tags"><i>短片合集</i><i>东南亚</i><i>雨季主题</i></div>
+            <div class="meta"><span class="score">8.4 分</span><span>4 部 · 共 72 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/yingping-changjing08/400/300" alt="影片评论专栏的取景构图分析示意图" width="400" height="300" loading="lazy">
+            <span class="cat">影像评论</span>
+          </div>
+          <div class="c-body">
+            <h3>一个长镜头的三次失败</h3>
+            <p class="desc">拍摄手记专栏的长文影像版，拆解同一段 4 分钟长镜头在三次拍摄中的取舍：光线、走位、收音与预算各自让步到哪一步。</p>
+            <div class="tags"><i>长镜头</i><i>拍摄手记</i><i>方法拆解</i></div>
+            <div class="meta"><span class="score">—</span><span>评论 · 24 分钟</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="panel" id="latest">
+      <div class="sec-head">
+        <div class="t">
+          <h2>最新更新与上线动态</h2>
+          <div class="sub">11 月 18 日至 11 月 25 日的条目变动</div>
+        </div>
+      </div>
+      <ul class="news-list">
+        <li>
+          <span class="time">11-25</span>
+          <div>
+            <a class="n-t" href="/#featured">《川西木雅人四季》第 6 集上线</a>
+            <div class="n-s">冬季迁场收尾，全 6 集完结；同步放出 12 分钟拍摄手记，讲高原收音设备的选择。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-24</span>
+          <div>
+            <a class="n-t" href="/#featured">《闽南红砖厝手记》更新第 4 集</a>
+            <div class="n-s">屋脊剪黏修复段落上线，片尾附 3 分钟砖窑温度控制说明。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-23</span>
+          <div>
+            <a class="n-t" href="/#featured">《潮汐表上的渔村》修复版补字幕</a>
+            <div class="n-s">新增闽南语与普通话双语字幕，修正 2013 年版三处潮位标注错误。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-22</span>
+          <div>
+            <a class="n-t" href="/#deep">影像评论专栏更新《声音先于画面》</a>
+            <div class="n-s">讨论环境声在人文纪录片中的叙事权重，约 6800 字，含 5 段音频对照。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-21</span>
+          <div>
+            <a class="n-t" href="/#featured">《旧城夜市的三条街》槟城篇上线</a>
+            <div class="n-s">三条街的最后一集，收摊后的空街长镜头共 2 分 40 秒，不剪断。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-20</span>
+          <div>
+            <a class="n-t" href="/#rank">2026 年度片单初选公布</a>
+            <div class="n-s">入围 24 部，其中 9 部为青年短片单元作品，终选将于 12 月中旬公布。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-19</span>
+          <div>
+            <a class="n-t" href="/#featured">《西阵织的一百二十根线》第 3 集上线</a>
+            <div class="n-s">织坊第四代接手后的转产段落，全 3 集完结，附排线工序图解。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-19</span>
+          <div>
+            <a class="n-t" href="/#latest">口述档案新增 8 条录音整理稿</a>
+            <div class="n-s">来自北江渡口、周城染坊与台南夜市的三组访谈，文字稿已校对。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-18</span>
+          <div>
+            <a class="n-t" href="/#featured">《渡口老人：最后一次摆渡》上线</a>
+            <div class="n-s">单片 47 分钟，固定机位拍摄，片中没有旁白与配乐。</div>
+          </div>
+        </li>
+        <li>
+          <span class="time">11-18</span>
+          <div>
+            <a class="n-t" href="/#deep">拍摄者驻留计划 2027 年度开放投稿</a>
+            <div class="n-s">6 个名额，面向东亚与东南亚独立纪录团队，截稿 2026-12-20。</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="panel" id="cats">
+      <div class="sec-head">
+        <div class="t">
+          <h2>按类别找片</h2>
+          <div class="sub">八个入口对应实际拍摄对象，点击进入对应片单</div>
+        </div>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#featured">
+          <span class="c-n">手艺与匠人</span>
+          <span class="c-d">砌筑、织造、染色、木作等生产现场</span>
+          <span class="c-k">74 部条目</span>
+        </a>
+        <a class="cat-item" href="/#featured">
+          <span class="c-n">城市与街区</span>
+          <span class="c-d">旧城改造、夜市、通勤路线上的小空间</span>
+          <span class="c-k">86 部条目</span>
+        </a>
+        <a class="cat-item" href="/#featured">
+          <span class="c-n">山野与高原</span>
+          <span class="c-d">牧场迁场、山地农耕、季节节律</span>
+          <span class="c-k">63 部条目</span>
+        </a>
+        <a class="cat-item" href="/#featured">
+          <span class="c-n">海岸与岛屿</span>
+          <span class="c-d">渔汛、潮汐作息、岛屿迁徙</span>
+          <span class="c-k">48 部条目</span>
+        </a>
+        <a class="cat-item" href="/#featured">
+          <span class="c-n">饮食人类学</span>
+          <span class="c-d">发酵、腌渍、市集与家常菜谱系</span>
+          <span class="c-k">57 部条目</span>
+        </a>
+        <a class="cat-item" href="/#deep">
+          <span class="c-n">影像评论</span>
+          <span class="c-d">镜头语言、环境声、伦理与预算取舍</span>
+          <span class="c-k">39 篇长文</span>
+        </a>
+        <a class="cat-item" href="/#featured">
+          <span class="c-n">口述档案</span>
+          <span class="c-d">长时段访谈与录音文字整理稿</span>
+          <span class="c-k">32 组档案</span>
+        </a>
+        <a class="cat-item" href="/#featured">
+          <span class="c-n">青年短片</span>
+          <span class="c-d">15 至 30 分钟的新导演作品合集</span>
+          <span class="c-k">61 部短片</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="panel deep" id="deep">
+      <div class="sec-head">
+        <div class="t">
+          <h2>深度解析：人文纪录片该怎么挑、怎么看</h2>
+          <div class="sub">从类型差异、判断维度到观看顺序的具体说明</div>
+        </div>
+      </div>
+      <div class="deep-body">
+        <p>
+          面对同一个人文题材，不同团队交出的成片差别可以非常大。有的片子把镜头交给环境，
+          让你在四十多分钟里只看一个人做一件事；有的片子用密集旁白把背景信息一次讲完。
+          两种做法都能成立，但适合的观看场景完全不同。下面从类型、判断维度和观看顺序三部分展开。
+        </p>
+
+        <h3>一、四类常见形态的实际差别</h3>
+        <p>
+          在亚洲精久在久久朗人美的片库里，最常出现的是四种形态：<strong>工序型</strong>、
+          <strong>跟拍型</strong>、<strong>口述型</strong>与<strong>评论型</strong>。它们的区别不在题材，而在信息从哪里来。
+        </p>
+        <div class="compare">
+          <div>
+            <h4>工序型</h4>
+            <p>以一件事的完成过程为骨架，比如砌一面墙、染一匹布。信息来自动作本身，旁白极少。优点是结构清楚、可反复看；缺点是人物关系较薄。</p>
+          </div>
+          <div>
+            <h4>跟拍型</h4>
+            <p>用较长时间跟随一个人或一个家庭，如《川西木雅人四季》。信息来自时间累积，需要观众容忍前二十分钟的“无事发生”。</p>
+          </div>
+          <div>
+            <h4>口述型</h4>
+            <p>以访谈为主体，画面服务于讲述，如《渡口老人》。优点是信息密度高；风险是画面容易单薄，需要靠环境镜头撑住节奏。</p>
+          </div>
+          <div>
+            <h4>评论型</h4>
+            <p>不拍对象，而是分析已有影像，如拍摄手记专栏。适合已经看过几部作品、开始关心方法的人。</p>
+          </div>
+        </div>
+
+        <h3>二、判断一部值不值得投入时间的四个维度</h3>
+        <ul>
+          <li><strong>时间跨度是否真实。</strong>标注“跟拍一年”的片子，成片里应能看出季节与衣着变化，而不只是字幕提示。四季各一集与一次拍完分四季剪辑，观感差别很大。</li>
+          <li><strong>环境声有没有被处理。</strong>手艺与自然题材里，锤击、织机、风与水的层次往往比配乐更能说明现场。《西阵织的一百二十根线》几乎不用配乐，靠机房噪声立住空间。</li>
+          <li><strong>人物是否被允许沉默。</strong>好的口述段落会留下停顿。若每句话都被剪成短促回答，通常意味着素材不足或后期过度干预。</li>
+          <li><strong>是否交代失败。</strong>《周城扎染》保留两次失败的染色过程，这类段落比成品展示更能说明手艺的真实难度。</li>
+        </ul>
+
+        <div class="pull">
+          一个实用标准：如果一部片子在关掉声音后仍能看懂七成，说明它的镜头本身承担了叙事；如果必须依赖旁白才能理解，那它更接近配画面的广播节目。
+        </div>
+
+        <h3>三、不同观看目标对应的选择</h3>
+        <p>
+          想快速了解一门手艺的流程，优先选工序型单片，时长通常在 30 到 50 分钟，一次看完即可。
+          想理解一个地方的生活方式，选跟拍型多集作品，按季节顺序看，中间不必连着看完。
+          已经在做影像创作的人，评论型与拍摄手记更直接，能省掉大量试错成本。
+          如果只是想在周末晚上看点不费力的内容，《旧城夜市的三条街》这类结构松散的观察型作品更合适。
+        </p>
+
+        <h3>四、几条容易被忽略的观看提示</h3>
+        <ul>
+          <li>方言段落建议开字幕但不倍速，语速与停顿本身是信息。</li>
+          <li>修复版与原始版差异主要在调色与字幕，若已看过原版，可只看新增的说明段落。</li>
+          <li>同一地域的多部作品连着看时，注意拍摄年份，2013 年与 2026 年的同一渔村可能已经完全不同。</li>
+          <li>片尾字幕里的协作团队名单值得留意，同一组摄影师往往有稳定的影像风格。</li>
+        </ul>
+        <p>
+          这些判断标准不是硬性的评分规则，而是一套让自己少走弯路的筛选习惯。
+          亚洲精久在久久朗人美在每部作品的条目页都标注了拍摄周期、机位数量与后期处理方式，
+          正是为了让这种判断有据可依。
+        </p>
+      </div>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="panel" id="guide">
+      <div class="sec-head">
+        <div class="t">
+          <h2>观看路径：第一次来从哪里开始</h2>
+          <div class="sub">四步顺序，兼顾信息量与观看耐力</div>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>
+          <h4>先看一部工序型单片，建立节奏感</h4>
+          <p>推荐《渡口老人：最后一次摆渡》或《周城扎染》第一集。单片时长 30 至 50 分钟，结构完整，不需要追更，适合判断自己是否适应这种慢节奏。</p>
+        </li>
+        <li>
+          <h4>再进一个跟拍型多集作品，按季节顺序看</h4>
+          <p>《川西木雅人四季》建议从春季篇开始，每集间隔几天再看，季节变化带来的体感差别会更明显。切忌一次连刷六集。</p>
+        </li>
+        <li>
+          <h4>补一部城市题材，换掉自然环境的观看惯性</h4>
+          <p>《旧城夜市的三条街》三集对应三座城市，可先看自己最熟悉的那座，再对照另外两座，城市规模与夜市形态的差异会更容易被察觉。</p>
+        </li>
+        <li>
+          <h4>最后读评论与手记，把观感转成方法</h4>
+          <p>《一个长镜头的三次失败》适合作为收尾。它解释了很多成片里“看起来自然”的段落其实经过反复取舍，读完之后再看片，注意力会落在不同的地方。</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="panel faq" id="faq">
+      <div class="sec-head">
+        <div class="t">
+          <h2>常见问题</h2>
+          <div class="sub">关于更新节奏、类型差别与入门选择的六个问题</div>
+        </div>
+      </div>
+
+      <details>
+        <summary>这类人文纪录片一般多久更新一次？</summary>
+        <div class="a">
+          多集作品通常按周更，单集间隔 7 天，例如《闽南红砖厝手记》自 11 月初起每周一更新一集，目前更新至第 4 集。
+          单片作品不设固定周期，多为制作完成后一次性上线。口述档案则是批量整理，11 月 19 日一次性放出了 8 条录音整理稿。
+        </div>
+      </details>
+
+      <details>
+        <summary>工序型和跟拍型到底有什么区别，该怎么选？</summary>
+        <div class="a">
+          <b>工序型</b>围绕一件事的完成过程展开，信息来自动作，结构清楚，单片即可看完，适合时间有限时观看。
+          <b>跟拍型</b>用较长时间跟随人物，信息来自时间累积，需要多集连看才能体会变化。
+          想了解一门手艺怎么做，选工序型；想理解一个地方怎么生活，选跟拍型。
+        </div>
+      </details>
+
+      <details>
+        <summary>第一次接触，从哪一部开始看比较好？</summary>
+        <div class="a">
+          建议从《渡口老人：最后一次摆渡》开始。它是单片，47 分钟，固定机位、无旁白，信息不依赖背景知识，
+          看完能快速判断自己是否接受这种影像语言。若觉得节奏太慢，可换《旧城夜市的三条街》，结构更松散、场景更热闹。
+        </div>
+      </details>
+
+      <details>
+        <summary>修复版和原始版差别大吗，需要两部都看吗？</summary>
+        <div class="a">
+          以《潮汐表上的渔村》为例，修复版主要改动三处：重新调色、补齐闽南语与普通话双语字幕、修正三处潮位标注。
+          画面结构没有变化。若已看过 2013 年版，只需看修复版新增的片尾说明段落即可，不必重看全片。
+        </div>
+      </details>
+
+      <details>
+        <summary>如何判断一部人文纪录片的信息是否可靠？</summary>
+        <div class="a">
+          可以看三个地方：一是片尾是否列出拍摄周期与协作团队；二是关键数据（产量、年份、地名）是否在画面内出现原始凭据，
+          如账本、标牌、潮汐表；三是口述段落是否保留停顿与不确定表述。
+          亚洲精久在久久朗人美的条目页会标注拍摄周期与后期处理方式，可作为参考。
+        </div>
+      </details>
+
+      <details>
+        <summary>方言内容有字幕吗，需要开倍速看吗？</summary>
+        <div class="a">
+          目前上线的作品均提供普通话字幕，闽南语、白族方言与部分东南亚语言段落另配原语字幕。
+          不建议开倍速：这类影像的节奏本身就依赖停顿与沉默，1.25 倍速会明显削弱环境声的层次，
+          尤其在《西阵织的一百二十根线》这类以机器噪声构建空间的片子里。
+        </div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="panel" id="comments">
+      <div class="sec-head">
+        <div class="t">
+          <h2>观众怎么说</h2>
+          <div class="sub">来自条目页的 14 条评论，含中性评价</div>
+        </div>
+      </div>
+      <div class="cmts">
+        <div class="cmt">
+          <div class="u"><span class="av">林</span><span class="nm">林间小满</span><span class="tm">11-25</span></div>
+          <p>《川西木雅人四季》春季那集的接羔段落，环境声收得干净，铃铛声一直在很远的背景里。<em>看完才注意到全片没有配乐</em>。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">陈</span><span class="nm">陈默不语</span><span class="tm">11-25</span></div>
+          <p>红砖厝第 4 集的剪黏修复拍得细，但前二十分钟铺垫有点长，差点放弃。坚持到上梁那段就值了。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">苏</span><span class="nm">苏门答腊的风</span><span class="tm">11-24</span></div>
+          <p>槟城夜市那集收摊后的空街长镜头，2 分 40 秒没剪断，看的时候屏住呼吸。<em>这种耐心现在很少见</em>。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">黄</span><span class="nm">黄浦江边散步</span><span class="tm">11-24</span></div>
+          <p>修复版的双语字幕帮了大忙，2013 年那版方言段落实在听不懂。潮位标注修正也及时。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">周</span><span class="nm">周城染布人</span><span class="tm">11-23</span></div>
+          <p>扎染那部保留失败染色是对的，我们本地人看完都说真实。就是节气对应讲得略简单，可以再展开。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">吴</span><span class="nm">吴下阿蒙</span><span class="tm">11-23</span></div>
+          <p>《一个长镜头的三次失败》看完再看正片，注意力完全变了。以前只看故事，现在会盯着走位和灯位。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">郑</span><span class="nm">郑氏茶铺</span><span class="tm">11-22</span></div>
+          <p>西阵织那部讲排线的部分太专业，我外行看得有点吃力。<em>但第四代接手转产那段讲得好</em>，人物立住了。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">何</span><span class="nm">何处不相逢</span><span class="tm">11-22</span></div>
+          <p>口述档案的文字整理稿质量很高，标点都校过。希望北江渡口那组能再多整理几条。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">梁</span><span class="nm">梁上君子不偷书</span><span class="tm">11-21</span></div>
+          <p>青年短片单元里《摩托修理铺》15 分钟讲完一次告别，干净利落。另外三部节奏偏慢，水平不太齐。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">许</span><span class="nm">许愿树下</span><span class="tm">11-21</span></div>
+          <p>渡口老人那部没有旁白，一开始不习惯，后面反而觉得多余旁白才是干扰。老人划桨的手部特写拍得好。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">马</span><span class="nm">马上看海</span><span class="tm">11-20</span></div>
+          <p>年度片单初选 24 部里有 9 部是青年短片，比例挺高。希望终选能公开评审意见。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">叶</span><span class="nm">叶落三秋</span><span class="tm">11-20</span></div>
+          <p>整体不错，就是有些条目页的简介写得太概括，点进去才知道具体拍的是什么，建议多写两句拍摄对象。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">郭</span><span class="nm">郭外斜阳</span><span class="tm">11-19</span></div>
+          <p>环境声那篇评论提到的五段音频对照很有用，第一次意识到风声也分远近层次。</p>
+        </div>
+        <div class="cmt">
+          <div class="u"><span class="av">谢</span><span class="nm">谢家小院</span><span class="tm">11-19</span></div>
+          <p>《旧城夜市的三条街》曼谷篇拍得最好，台南篇稍显仓促。<em>三城对照的思路是对的</em>，可以再出一季。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="panel" id="news">
+      <div class="sec-head">
+        <div class="t">
+          <h2>相关资讯</h2>
+          <div class="sub">11 月的条目上线与社区动态</div>
+        </div>
+      </div>
+      <div class="info-list">
+        <article class="info-card">
+          <img src="https://picsum.photos/seed/zhengji-shouye02/600/400" alt="川西高原冬季牧场与牦牛群的远景" width="600" height="400" loading="lazy">
+          <div class="ic-b">
+            <span class="date">2026-11-25</span>
+            <h4>《川西木雅人四季》全 6 集完结</h4>
+            <p>冬季迁场篇上线，制作团队同步发布高原收音设备清单与 12 分钟拍摄手记。</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <img src="https://picsum.photos/seed/xiufu-chaoxi10/600/400" alt="手写潮汐表与渔船甲板的近景" width="600" height="400" loading="lazy">
+          <div class="ic-b">
+            <span class="date">2026-11-23</span>
+            <h4>《潮汐表上的渔村》修复版三处改动</h4>
+            <p>重新调色、补齐双语字幕、修正潮位标注，2013 年原始素材已完整归档。</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <img src="https://picsum.photos/seed/zhuliu-jihua01/600/400" alt="独立纪录团队在户外勘景的工作场景" width="600" height="400" loading="lazy">
+          <div class="ic-b">
+            <span class="date">2026-11-18</span>
+            <h4>拍摄者驻留计划 2027 年度开放 6 个名额</h4>
+            <p>面向东亚与东南亚独立纪录团队，提交选题与 3 分钟样片参与初审，截稿 12 月 20 日。</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <img src="https://picsum.photos/seed/niandu-piandan13/600/400" alt="年度片单评审现场的投影与讨论画面" width="600" height="400" loading="lazy">
+          <div class="ic-b">
+            <span class="date">2026-11-20</span>
+            <h4>2026 年度片单初选 24 部入围</h4>
+            <p>青年短片单元占 9 部，终选将于 12 月中旬公布，评审意见将随结果一并公开。</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <img src="https://picsum.photos/seed/koushu-luyin16/600/400" alt="录音设备与手写访谈笔记的桌面特写" width="600" height="400" loading="lazy">
+          <div class="ic-b">
+            <span class="date">2026-11-19</span>
+            <h4>口述档案新增 8 条录音整理稿</h4>
+            <p>来自北江渡口、周城染坊与台南夜市三组访谈，全部完成文字校对与方言注释。</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <img src="https://picsum.photos/seed/shengyin-pinglun15/600/400" alt="纪录片环境声采集现场的话筒与风声" width="600" height="400" loading="lazy">
+          <div class="ic-b">
+            <span class="date">2026-11-22</span>
+            <h4>评论专栏《声音先于画面》发布</h4>
+            <p>讨论环境声在人文纪录片中的叙事权重，约 6800 字，附 5 段可对照的现场音频。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 11 榜单 -->
+    <section class="panel" id="rank">
+      <div class="sec-head">
+        <div class="t">
+          <h2>本周观看榜</h2>
+          <div class="sub">统计周期 11 月 18 日至 11 月 25 日</div>
+        </div>
+        <a class="link" href="/#featured">查看条目</a>
+      </div>
+      <ol class="rank">
+        <li>
+          <span class="no">1</span>
+          <div><div class="r-t">川西木雅人四季</div><div class="r-s">山野风物 · 全 6 集 · 9.3 分</div></div>
+          <span class="r-v">12.4 万</span>
+        </li>
+        <li>
+          <span class="no">2</span>
+          <div><div class="r-t">闽南红砖厝手记</div><div class="r-s">匠人纪录 · 更新至 4 集 · 9.1 分</div></div>
+          <span class="r-v">9.8 万</span>
+        </li>
+        <li>
+          <span class="no">3</span>
+          <div><div class="r-t">潮汐表上的渔村（修复版）</div><div class="r-s">海岸与岛屿 · 单片 55 分钟 · 8.8 分</div></div>
+          <span class="r-v">7.6 万</span>
+        </li>
+        <li>
+          <span class="no">4</span>
+          <div><div class="r-t">西阵织的一百二十根线</div><div class="r-s">匠人纪录 · 全 3 集 · 8.9 分</div></div>
+          <span class="r-v">6.2 万</span>
+        </li>
+        <li>
+          <span class="no">5</span>
+          <div><div class="r-t">旧城夜市的三条街</div><div class="r-s">城市影像志 · 全 3 集 · 8.6 分</div></div>
+          <span class="r-v">5.5 万</span>
+        </li>
+        <li>
+          <span class="no">6</span>
+          <div><div class="r-t">渡口老人：最后一次摆渡</div><div class="r-s">口述档案 · 单片 47 分钟 · 8.5 分</div></div>
+          <span class="r-v">4.9 万</span>
+        </li>
+        <li>
+          <span class="no">7</span>
+          <div><div class="r-t">周城扎染：一块布上的二十四节气</div><div class="r-s">匠人纪录 · 全 2 集 · 8.7 分</div></div>
+          <span class="r-v">4.1 万</span>
+        </li>
+        <li>
+          <span class="no">8</span>
+          <div><div class="r-t">青年短片单元：雨季的三次相遇</div><div class="r-s">青年短片 · 4 部 · 8.4 分</div></div>
+          <span class="r-v">3.7 万</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="panel" id="related">
+      <div class="sec-head">
+        <div class="t">
+          <h2>延伸方向</h2>
+          <div class="sub">从已看过的条目往周边题材延伸</div>
+        </div>
+      </div>
+      <div class="rel-tags">
+        <a href="/#featured">发酵食物与腌渍工艺 <span>21</span></a>
+        <a href="/#featured">海岛渔汛与潮汐作息 <span>18</span></a>
+        <a href="/#featured">旧城改造中的老店铺 <span>26</span></a>
+        <a href="/#featured">木作与榫卯结构 <span>15</span></a>
+        <a href="/#featured">高原牧业与迁场 <span>12</span></a>
+        <a href="/#deep">环境声采集方法 <span>9</span></a>
+        <a href="/#featured">东南亚青年导演短片 <span>23</span></a>
+        <a href="/#featured">节庆与祭祀仪式记录 <span>14</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="side-right">
+    <div class="r-box">
+      <h2>正在热看</h2>
+      <ol class="r-list">
+        <li><a href="/#featured">川西木雅人四季<span class="sub">冬季篇刚上线</span></a></li>
+        <li><a href="/#featured">闽南红砖厝手记<span class="sub">第 4 集 · 剪黏修复</span></a></li>
+        <li><a href="/#featured">潮汐表上的渔村<span class="sub">修复版 · 双语字幕</span></a></li>
+        <li><a href="/#featured">西阵织的一百二十根线<span class="sub">全 3 集完结</span></a></li>
+        <li><a href="/#featured">旧城夜市的三条街<span class="sub">槟城篇上线</span></a></li>
+        <li><a href="/#featured">渡口老人：最后一次摆渡<span class="sub">单片 47 分钟</span></a></li>
+      </ol>
+    </div>
+
+    <div class="r-box">
+      <h2>更新流水</h2>
+      <ul class="update-feed">
+        <li><span class="d">11-25</span><span><b>川西木雅人四季</b> 第 6 集上线，全片完结</span></li>
+        <li><span class="d">11-24</span><span><b>红砖厝手记</b> 第 4 集 · 剪黏修复</span></li>
+        <li><span class="d">11-23</span><span><b>潮汐表上的渔村</b> 补双语字幕</span></li>
+        <li><span class="d">11-22</span><span><b>声音先于画面</b> 评论长文发布</span></li>
+        <li><span class="d">11-21</span><span><b>旧城夜市</b> 槟城篇上线</span></li>
+        <li><span class="d">11-19</span><span><b>口述档案</b> 新增 8 条整理稿</span></li>
+      </ul>
+    </div>
+
+    <div class="r-box">
+      <h2>热门标签</h2>
+      <div class="tag-cloud">
+        <a href="/#featured">闽南建筑</a>
+        <a href="/#featured">高原牧业</a>
+        <a href="/#featured">渔汛</a>
+        <a href="/#featured">扎染</a>
+        <a href="/#featured">提花织造</a>
+        <a href="/#featured">夜市生计</a>
+        <a href="/#featured">口述史</a>
+        <a href="/#deep">长镜头</a>
+        <a href="/#deep">环境声</a>
+        <a href="/#featured">青年短片</a>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="34" height="34" viewBox="0 0 40 40" role="img" aria-label="亚洲精久在久久朗人美 图形标志">
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="#0f6f63"/>
+            <circle cx="20" cy="20" r="9.4" fill="none" stroke="#eaf6f3" stroke-width="1.6" opacity=".85"/>
+            <path d="M13.4 26.6l13.2-13.2" stroke="#f0a884" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="2.6" fill="#f0a884"/>
+          </svg>
+          <span>
+            <span class="cn">亚洲精久在久久朗人美</span>
+            <span class="en">ASIA LUMEN DOCS</span>
+          </span>
+        </div>
+        <p class="foot-desc">
+          以亚洲为取景范围的人文影像品牌，记录手艺现场、城市街区、山野与海岸的日常，
+          并以评论与手记延伸观看的深度。
+        </p>
+      </div>
+      <div class="foot-col">
+        <h3>频道</h3>
+        <ul>
+          <li><a href="/#featured">城市影像志</a></li>
+          <li><a href="/#featured">匠人纪录</a></li>
+          <li><a href="/#featured">山野风物</a></li>
+          <li><a href="/#featured">海岸与岛屿</a></li>
+          <li><a href="/#featured">口述档案</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>内容</h3>
+        <ul>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观看路径</a></li>
+          <li><a href="/#rank">本周观看榜</a></li>
+          <li><a href="/#related">延伸方向</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>参与</h3>
+        <ul>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#channels">频道索引</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="note">
+        页面所列片名、时长、评分与观看量为站内条目示例信息，统计截至 2026-11-25。
+        影像版权归各制作团队所有，评论与手记仅代表作者观点。
+      </span>
+      <span>© 2026 亚洲精久在久久朗人美 · 保留所有权利</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var q = document.getElementById('q');
+  var hint = document.getElementById('searchHint');
+  var hintTxt = document.getElementById('searchHintTxt');
+  var clearBtn = document.getElementById('clearSearch');
+  var toFeatured = document.getElementById('toFeatured');
+
+  /* 可筛选单元：卡片与资讯卡 */
+  var units = [].slice.call(document.querySelectorAll('.card, .info-card'));
+
+  function normalize(s){
+    return (s || '').toLowerCase().replace(/\s+/g, '');
+  }
+
+  function unitText(el){
+    return normalize(el.textContent + ' ' + [].map.call(el.querySelectorAll('img'), function(i){ return i.alt; }).join(' '));
+  }
+
+  function applyFilter(kw){
+    var key = normalize(kw);
+    var hit = 0;
+    units.forEach(function(el){
+      if(!key){ el.classList.remove('is-hidden'); return; }
+      var ok = unitText(el).indexOf(key) !== -1;
+      el.classList.toggle('is-hidden', !ok);
+      if(ok) hit++;
+    });
+
+    /* 隐藏没有可见子项的分组容器 */
+    [].forEach.call(document.querySelectorAll('.card-grid, .info-list'), function(grid){
+      var visible = grid.querySelectorAll('.card:not(.is-hidden), .info-card:not(.is-hidden)').length;
+      grid.classList.toggle('is-hidden', key !== '' && visible === 0);
+    });
+
+    if(key){
+      hint.classList.add('on');
+      hintTxt.textContent = hit > 0
+        ? '已筛选出 ' + hit + ' 条与「' + kw + '」相关的内容'
+        : '没有找到与「' + kw + '」相关的内容，可试试“匠人”“夜市”“渔村”等词';
+    } else {
+      hint.classList.remove('on');
+      hintTxt.textContent = '';
+    }
+  }
+
+  if(q){
+    q.addEventListener('input', function(){ applyFilter(q.value.trim()); });
+    q.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        applyFilter(q.value.trim());
+        var target = document.getElementById('featured');
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  }
+
+  if(clearBtn){
+    clearBtn.addEventListener('click', function(){
+      if(q){ q.value = ''; }
+      applyFilter('');
+      if(q) q.focus();
+    });
+  }
+
+  if(toFeatured){
+    toFeatured.addEventListener('click', function(){
+      var t = document.getElementById('featured');
+      if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  }
+})();
+</script>
+</body>
+              </html>
